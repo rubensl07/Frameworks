@@ -1,0 +1,60 @@
+/* definindo variáveis para cores */
+:root {
+    --bs-body-bg: var(--secondary);
+    --primary: #F3CC4D;
+    --secondary: #2E1012;
+}
+
+/* sobrescrevendo classes padrão do Bootstrap */
+/* a marcação !important dá um peso maior a regra, sobrescrevendo regras prévias */
+.bg-primary,
+.btn-primary {
+    background-color: var(--primary) !important;
+}
+
+.bg-secondary,
+.btn-secondary {
+    background-color: var(--secondary) !important;
+}
+
+.bg-tertiary,
+.btn-tertiary {
+    background-color: var(--tertiary) !important;
+}
+
+.bg-success,
+.btn-success {
+    background-color: var(--success) !important;
+}
+
+.bg-info,
+.btn-info {
+    background-color: var(--info) !important;
+}
+
+.bg-warning,
+.btn-warning {
+    background-color: var(--warning) !important;
+}
+
+.bg-danger .btn-danger {
+    background-color: var(--danger) !important;
+}
+
+.nav-link {
+    color: var(--primary) !important;
+}
+
+.nav-link:hover {
+    color: var(--warning) !important;
+}
+
+.background {
+    background-image: url(./img/background.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+* {
+    font-family: 'Indie Flower', cursive;
+}
